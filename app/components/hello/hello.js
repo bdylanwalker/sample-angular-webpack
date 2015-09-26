@@ -1,15 +1,15 @@
 export default ngModule => {
 
   if (ON_TEST) {
-    require('./kcd-hello.test')(ngModule);
+    require('./hello.test.js')(ngModule);
   }
 
-  ngModule.directive('kcdHello', function($log) {
-    require('./kcd-hello.styl');
+  ngModule.directive('sawHello', function($log) {
+    require('./hello.styl');
     return {
       restrict: 'E',
       scope: {},
-      template: require('./kcd-hello.html'),
+      template: require('./hello.html'),
       controllerAs: 'vm',
       controller: /*@ngInject*/ function() {
         const vm = this;

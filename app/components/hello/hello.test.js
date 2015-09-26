@@ -1,5 +1,5 @@
 export default ngModule => {
-  describe(`kcd-hello`, () => {
+  describe(`saw-hello`, () => {
     beforeEach(window.module(ngModule.name));
 
     it(`should test properly`, () => {
